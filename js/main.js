@@ -20,7 +20,7 @@
 
   document.addEventListener('DOMContentLoaded', () => {
 
-    router(Object.assign(router.groupedRoutes({
+    router(Object.assign(groupedRoutes({
       '/orgs/:org': {
         pre: ({ org }) => {
           let session = getSession();
